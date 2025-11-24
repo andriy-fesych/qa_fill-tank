@@ -107,6 +107,6 @@ describe('fillTank', () => {
     fillTank(user, 10.324568878);
 
     expect(user.vehicle.fuelRemains).toBe(40);
-    expect(user.money).toBe(300 - Math.round(3 * 10.324568878 * 100) / 100);
+    expect(user.money).toBe(3000 - Math.round(3 * 10.324568878 * 100) / 100);
   });
 });
